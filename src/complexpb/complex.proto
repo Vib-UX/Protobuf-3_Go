@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package complex;
+
+option go_package="./complexpb";
+
+message ComplexMessage{
+    DummyMessage dummy=1;
+    repeated DummyMessage list =2;
+
+}
+
+message DummyMessage{
+    int32 Id=1;
+    string name=2;
+}
